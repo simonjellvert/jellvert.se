@@ -19,18 +19,28 @@ h2 {
     margin: 0;
 }
 
-header.half-height {
-    height: 50vh;
+header.full-height {
+    height: 100vh;
     margin: 0;
+}
+
+.custom-row-1 {
+    height: 50vh;
+}
+
+.custom-row-2 {
+    height: 50vh; /* Adjust height as needed */
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    color: #fff;
 }
 
 img {
     max-width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 0 0 20px 0;
 }
 
 .header-text {
@@ -41,6 +51,14 @@ img {
     justify-content: center;
     align-items: center;
     padding: 0;
+}
+
+.text-center {
+    padding: 20px;
+}
+
+.header-content {
+    height: 50vh;
 }
 
 .custom-hr {
@@ -95,6 +113,29 @@ li {
     margin: 0;
 }
 
+.video-section {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.video-section video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.video-md-screen {
+    display: none;
+}
+
+
 @media (max-width: 767.98px) {
     .container {
         max-width: fit-content;
@@ -106,9 +147,12 @@ li {
         padding: 0;
     }
 
-    header.half-height {
+    .custom-row-1 {
         height: 60vh;
-        width: 100vw;
+    }
+
+    .custom-row-2 {
+        height: 40vh;
     }
 
     .col-md-6 img {
@@ -120,12 +164,12 @@ li {
     .header-text {
         background-color: transparent;
         color: #fff;
-        padding-top: 50px !important;
+        margin-top: 60px;
         height: 30vh; /* Ensure the column takes up the full height of its container */
     }
 
-    .section1 {
-        height: calc(100vh - 60vh);
+    .text-center {
+        padding: 20px 40px;
     }
 
     .col {
@@ -141,15 +185,23 @@ li {
     }
 
     main {
-        height: 40vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        height: 100vh;
+        width: 100%;
     }
 
     .section-text {
         font-style: italic;
         margin: 0;
+    }
+
+    .video-lg-screen {
+        display: none;
+    }
+
+    .video-md-screen {
+        display: block;
+        width: 100%;
+        height: 100vh;
     }
 }
 
