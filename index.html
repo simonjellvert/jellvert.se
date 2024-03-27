@@ -49,10 +49,10 @@
                     <div class="row">
                         <div class="col">
                             <ul class="list-unstyled mb-5">
-                                <li><h2>Hemsidor</h2></li>
-                                <li><h2>Webbshop</h2></li>
-                                <li><h2>Bokningssystem</h2></li>
-                                <li><h2>Webbapplikation</h2></li>
+                                <li><a href="#" id="website-link"><h2>Hemsidor</h2></a></li>
+                                <li><a href="#" id="webshop-link"><h2>Webbshop</h2></a></li>
+                                <li><a href="#" id="bookingsystem-link"><h2>Bokningssystem</h2></a></li>
+                                <li><a href="#" id="webbapplication-link"><h2>Webbapplikation</h2></a></li>
                             </ul>
                         </div>
                     </div>
@@ -71,21 +71,30 @@
                         Vi ses!
                     </p>
                     <a href="mailto:simon.jellvert@hotmail.com" class="text-decoration-none">
-                        <i class="fa-regular fa-envelope"></i>
+                        <i class="fas fa-envelope"></i>
                     </a>
                 </div>
             </div>
         </div>
     </header>
     <main>
-        <section class="overlay-section">
-            <div class="background-overlay1"></div>
+        <section class="overlay-section scroll-section d-flex justify-content-center align-items-center">
+            <div class="overlay-text">
+                <h1 class="case-header">Nercia Utbildning | <strong>Webshop</strong></h1>
+            </div>               
         </section>
-        <section class="image-section scroll-section">
-            <div class="background-img1"></div>
+        <section class="scroll-section">
+            <div class="scroll-section background-overlay1">           
+            </div>
         </section>
-        <section class="image-section scroll-section">
-            <div class="background-img1"></div>
+        <section class="overlay-section2 scroll-section d-flex justify-content-center align-items-center">
+            <div class="overlay-text">
+                <h1 class="case-header">Pizza Vagnen | <strong>Bokningssystem</strong></h1>
+            </div>               
+        </section>
+        <section class="scroll-section">
+            <div class="scroll-section background-overlay2">           
+            </div>
         </section>
     </main>
     <script>
@@ -97,6 +106,32 @@
                 setHeights: false
             });
         });
+        $(function() {
+        $('#website-link').on('click', function(e) {
+            e.preventDefault();
+            $('html, body').animate({
+                scrollTop: $('.overlay-section').offset().top
+            }, 1000);
+        });
+        $('#webshop-link').on('click', function(e) {
+            e.preventDefault();
+            $('html, body').animate({
+                scrollTop: $('.overlay-section').offset().top
+            }, 1000);
+        });
+        $('#bookingsystem-link').on('click', function(e) {
+            e.preventDefault();
+            $('html, body').animate({
+                scrollTop: $('.overlay-section2').offset().top
+            }, 1000);
+        });
+        $('#webbapplication-link').on('click', function(e) {
+            e.preventDefault();
+            $('html, body').animate({
+                scrollTop: $('.overlay-section').offset().top
+            }, 1000);
+        });
+    });
     </script>
 </body>
 </html>
