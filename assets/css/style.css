@@ -119,7 +119,8 @@ li {
 }
 
 .section-text {
-    font-style: italic;
+    font-size: 20px;
+    font-weight: 100;
     margin: 0;
 }
 
@@ -243,7 +244,6 @@ li {
     }
 
     .section-text {
-        font-style: italic;
         margin: 0;
     }
 
@@ -301,5 +301,9 @@ li {
 
     .background-overlay2 {
         background-image: url('../img/pizzavagnen.sm.png');
+    }
+
+    .section-text {
+        font-size: 18px;
     }
 }
