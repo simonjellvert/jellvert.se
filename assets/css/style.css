@@ -145,6 +145,10 @@ li {
     align-items: center;
 }
 
+.overlay-pointer {
+    position: absolute;
+    top: calc(100% + 20px); /* Adjust the spacing as needed */
+}
 
 .section1 {
     height: 50vh;
@@ -165,14 +169,26 @@ li {
     height: 100vh;
 }
 
-.overlay-section,
-.overlay-section2 {
+.overlay-website,
+.overlay-webshop,
+.overlay-bookingsystem {
     height: 100vh;
     width: 100%;
     background-color: transparent;
 }
 
-.background-overlay1 {
+.background-website {
+    position: relative;
+    background-image: url('../img/digger.lg.png');
+    height: 100vh;
+    width: 100%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.background-webshop {
     position: relative;
     background-image: url('../img/nercia.lg.png');
     height: 100vh;
@@ -183,7 +199,7 @@ li {
     overflow: hidden;
 }
 
-.background-overlay2 {
+.background-bookingsystem {
     position: relative;
     background-image: url('../img/pizzavagnen.lg.png');
     height: 100vh;
@@ -221,13 +237,13 @@ li {
 
 
 @media (max-width: 820px) {
-    .full-height,
-    /* .overlay-section,
+    /*.full-height,
+    .overlay-section,
     .overlay-section2,
-    main, */
+    main,
     .scroll-section {
         height: calc(100vh - 60px);
-    }
+    } */
 
     .container {
         max-width: fit-content;
@@ -286,11 +302,16 @@ li {
         margin: 0;
     }
 
-    .background-overlay1 {
+    .background-website {
+        background-image: url('../img/diggers.md.png');
+    }
+
+
+    .background-webshop {
         background-image: url('../img/nercia.md.png');
     }
 
-    .background-overlay2 {
+    .background-bookingsystem {
         background-image: url('../img/pizzavagnen.md.png');
     }
 
@@ -338,11 +359,15 @@ li {
         display: block;
     }
 
-    .background-overlay1 {
+    .background-website {
+        background-image: url('../img/diggers.sm.png');
+    }
+
+    .background-webshop {
         background-image: url('../img/nercia.sm.png');
     }
 
-    .background-overlay2 {
+    .background-bookingsystem {
         background-image: url('../img/pizzavagnen.sm.png');
     }
 

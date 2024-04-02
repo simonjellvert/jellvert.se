@@ -30,7 +30,7 @@
 </head>
 <body>
     <header class="full-height scroll-section">
-        <div class="container-fluid m-0 p-0 h-50">
+        <div class="container m-0 p-0 h-50">
             <div class="row custom-row-1">
                 <div class="col-md-6 order-md-1 p-0">
                     <img src="assets/img/simon_jellvert_neon.png" alt="Logotyp Simon Jellvert">
@@ -77,29 +77,38 @@
                         <i class="fa-solid fa-phone"></i>
                     </a>
                 </div>
+                <a href="#" id="webshop-link" class="scroll-down">
+                    <i class="fas fa-chevron-down fa-lg"></i>
+                </a>
             </div>
-            <a href="#" id="webshop-link" class="scroll-down">
-                <i class="fas fa-chevron-down fa-lg"></i>
-            </a>
         </div>
     </header>
     <main>
-        <section class="overlay-section scroll-section d-flex justify-content-center align-items-center">
+        <section class="overlay-website scroll-section d-flex justify-content-center align-items-center">
             <div class="overlay-text">
-                <h1 class="case-header">Nercia Utbildning | <strong>Webshop</strong></h1>
-            </div>               
-        </section>
-        <section class="scroll-section">
-            <div class="scroll-section background-overlay1">           
+                <h1 class="case-header">Goal Diggers | <strong>Hemsida</strong></h1>
             </div>
         </section>
-        <section class="overlay-section2 scroll-section d-flex justify-content-center align-items-center">
+        <section class="scroll-section">
+            <div class="scroll-section background-website">           
+            </div>
+        </section>
+        <section class="overlay-webshop scroll-section d-flex justify-content-center align-items-center">
+            <div class="overlay-text">
+                <h1 class="case-header">Nercia Utbildning | <strong>Webshop</strong></h1>
+            </div>           
+        </section>
+        <section class="scroll-section">
+            <div class="scroll-section background-webshop">           
+            </div>
+        </section>
+        <section class="overlay-bookingsystem scroll-section d-flex justify-content-center align-items-center">
             <div class="overlay-text">
                 <h1 class="case-header">Pizza Vagnen | <strong>Bokningssystem</strong></h1>
             </div>               
         </section>
         <section class="scroll-section">
-            <div class="scroll-section background-overlay2">           
+            <div class="scroll-section background-bookingsystem">           
             </div>
         </section>
     </main>
@@ -108,25 +117,26 @@
             $('#website-link').on('click', function(e) {
                 e.preventDefault();
                 $('html, body').animate({
-                    scrollTop: $('.overlay-section').offset().top
+                    scrollTop: $('.overlay-website').offset().top
                 }, 1000);
             });
-            $('#webshop-link').on('click', function(e) {
+            $('.scroll-down').on('click', function(e) {
                 e.preventDefault();
                 $('html, body').animate({
-                    scrollTop: $('.overlay-section').offset().top
+                    scrollTop: $('.scroll-section').eq(1).offset().top
                 }, 1000);
             });
+            
             $('#bookingsystem-link').on('click', function(e) {
                 e.preventDefault();
                 $('html, body').animate({
-                    scrollTop: $('.overlay-section2').offset().top
+                    scrollTop: $('.overlay-webshop').offset().top
                 }, 1000);
             });
             $('#webbapplication-link').on('click', function(e) {
                 e.preventDefault();
                 $('html, body').animate({
-                    scrollTop: $('.overlay-section').offset().top
+                    scrollTop: $('.overlay-bookingsystem').offset().top
                 }, 1000);
             });
         });
