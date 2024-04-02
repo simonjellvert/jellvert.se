@@ -369,4 +369,17 @@ li {
     .section-text {
         font-size: 14px;
     }
+
+    .custom-hr {
+        width: 300px;
+    }
+
+    .custom-table {
+        text-align-last: justify;
+    }
+
+    .list-unstyled {
+        column-count: 2;
+        column-gap: 1em;
+    }
 }
