@@ -5,6 +5,7 @@ body {
     background-image: url('../img/bright-light-dark-background.jpg');
     background-size: cover;
     background-position: center;
+    background-color: #000;
 }
 
 h1 {
@@ -236,10 +237,6 @@ li {
 
 
 @media (max-width: 834px) {
-    .container {
-        max-width: fit-content;
-    }
-
     .col-md-6 {
         width: 100%;
         order: initial;
@@ -248,17 +245,14 @@ li {
 
     .custom-row-1 {
         height: 40vh;
-        max-width: 100%;
     }
 
     .custom-row-2 {
         height: 60vh;
-        max-width: 100%;
     }
 
     .logotype {
         height: 40vh;
-        max-width: 100%;
         object-fit: cover;
     }
 
@@ -335,7 +329,7 @@ li {
     }
 
     .header-text {
-        margin-top: 30px;
+        margin-top: 50px;
         height: 20vh;
     }
 
