@@ -40,11 +40,15 @@ header.full-height {
 }
 
 .custom-row-2 {
-    height: 50vh;
+    height: 40vh;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #fff;
+}
+
+.custom-row-3 {
+    height: 10vh;
 }
 
 .logotype {
@@ -121,7 +125,7 @@ li {
 
 .scroll-down {
     position: absolute;
-    bottom: 15px;
+    bottom: 30px;
     left: 0;
     right: 0;
     margin: auto;
@@ -245,10 +249,11 @@ li {
 
     .custom-row-1 {
         height: 40vh;
+        width: 100vw;
     }
 
     .custom-row-2 {
-        height: 60vh;
+        width: 100vw;
     }
 
     .logotype {
@@ -263,7 +268,7 @@ li {
     }
 
     .text-center {
-        padding: 20px 40px;
+        padding: 0 20px;
     }
 
     .col {
@@ -329,8 +334,7 @@ li {
     }
 
     .header-text {
-        margin-top: 50px;
-        height: 20vh;
+        margin-top: 30px;
     }
 
     .section-text {
@@ -338,12 +342,11 @@ li {
     }
 
     .custom-row-1 {
-        height: 40vh;
+        height: auto;
     }
 
     .custom-row-2 {
-        height: 60vh;
-        display: block;
+        height: auto;
     }
 
     .background-website {
@@ -373,5 +376,9 @@ li {
     .list-unstyled {
         column-count: 2;
         column-gap: 1em;
+    }
+
+    .display-sm {
+        display: none;
     }
 }
