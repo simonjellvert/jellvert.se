@@ -142,6 +142,16 @@
                 }, 1000);
             });
         });
+        if (window.innerWidth <= 430) {
+            // Check if the screen orientation API is supported
+            if (screen.orientation && screen.orientation.lock) {
+                // Lock the screen orientation to portrait
+                screen.orientation.lock("portrait");
+            } else if (screen.lockOrientation) { // For older browsers
+                // Lock the screen orientation to portrait
+                screen.lockOrientation("portrait");
+            }
+        }
     </script>
 </body>
 </html>
