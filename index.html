@@ -120,23 +120,22 @@
                     scrollTop: $('.overlay-website').offset().top
                 }, 1000);
             });
-            $('.scroll-down').on('click', function(e) {
-                e.preventDefault();
-                $('html, body').animate({
-                    scrollTop: $('.scroll-section').eq(1).offset().top
-                }, 1000);
-            });
-            
-            $('#bookingsystem-link').on('click', function(e) {
+            $('#webshop-link').on('click', function(e) {
                 e.preventDefault();
                 $('html, body').animate({
                     scrollTop: $('.overlay-webshop').offset().top
                 }, 1000);
             });
-            $('#webbapplication-link').on('click', function(e) {
+            $('#bookingsystem-link').on('click', function(e) {
                 e.preventDefault();
                 $('html, body').animate({
                     scrollTop: $('.overlay-bookingsystem').offset().top
+                }, 1000);
+            });
+            $('.scroll-down').on('click', function(e) {
+                e.preventDefault();
+                $('html, body').animate({
+                    scrollTop: $('.scroll-section').eq(1).offset().top
                 }, 1000);
             });
         });
