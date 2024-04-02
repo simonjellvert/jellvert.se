@@ -78,6 +78,9 @@
                     </a>
                 </div>
             </div>
+            <a href="#" id="webshop-link" class="scroll-down">
+                <i class="fas fa-chevron-down fa-lg"></i>
+            </a>
         </div>
     </header>
     <main>
@@ -102,39 +105,31 @@
     </main>
     <script>
         $(function() {
-            $.scrollify({
-                section: ".scroll-section",
-                easing: "easeOutExpo",
-                scrollSpeed: 1100,
-                setHeights: false
+            $('#website-link').on('click', function(e) {
+                e.preventDefault();
+                $('html, body').animate({
+                    scrollTop: $('.overlay-section').offset().top
+                }, 1000);
+            });
+            $('#webshop-link').on('click', function(e) {
+                e.preventDefault();
+                $('html, body').animate({
+                    scrollTop: $('.overlay-section').offset().top
+                }, 1000);
+            });
+            $('#bookingsystem-link').on('click', function(e) {
+                e.preventDefault();
+                $('html, body').animate({
+                    scrollTop: $('.overlay-section2').offset().top
+                }, 1000);
+            });
+            $('#webbapplication-link').on('click', function(e) {
+                e.preventDefault();
+                $('html, body').animate({
+                    scrollTop: $('.overlay-section').offset().top
+                }, 1000);
             });
         });
-        $(function() {
-        $('#website-link').on('click', function(e) {
-            e.preventDefault();
-            $('html, body').animate({
-                scrollTop: $('.overlay-section').offset().top
-            }, 1000);
-        });
-        $('#webshop-link').on('click', function(e) {
-            e.preventDefault();
-            $('html, body').animate({
-                scrollTop: $('.overlay-section').offset().top
-            }, 1000);
-        });
-        $('#bookingsystem-link').on('click', function(e) {
-            e.preventDefault();
-            $('html, body').animate({
-                scrollTop: $('.overlay-section2').offset().top
-            }, 1000);
-        });
-        $('#webbapplication-link').on('click', function(e) {
-            e.preventDefault();
-            $('html, body').animate({
-                scrollTop: $('.overlay-section').offset().top
-            }, 1000);
-        });
-    });
     </script>
 </body>
 </html>

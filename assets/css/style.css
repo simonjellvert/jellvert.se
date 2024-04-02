@@ -114,6 +114,38 @@ li {
     transition: transform 0.3s ease;
 }
 
+.scroll-down {
+    position: absolute;
+    bottom: 60px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scroll-down:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+
+.scroll-down .fas {
+    color: #000;
+    font-size: 20px;
+    padding: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #ff3399, #ff66cc, #ff3399);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .section1 {
     height: 50vh;
     max-width: none;
