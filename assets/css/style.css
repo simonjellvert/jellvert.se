@@ -116,7 +116,7 @@ li {
 
 .scroll-down {
     position: absolute;
-    bottom: 60px;
+    bottom: 15px;
     left: 0;
     right: 0;
     margin: auto;
@@ -143,11 +143,6 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.overlay-pointer {
-    position: absolute;
-    top: calc(100% + 20px); /* Adjust the spacing as needed */
 }
 
 .section1 {
