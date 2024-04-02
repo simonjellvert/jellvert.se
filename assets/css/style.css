@@ -251,7 +251,7 @@ li {
     }
 
     .col-md-6 img {
-        height: 20vh;
+        height: 100%;
         width: 100%;
         object-fit: cover;
     }
@@ -259,7 +259,7 @@ li {
     .header-text {
         background-color: transparent;
         color: #fff;
-        height: 20vh;
+        height: 100%;
     }
 
     .text-center {
@@ -307,23 +307,6 @@ li {
 
     h2 {
         font-size: 20px;
-    }
-}
-
-@media (min-width: 768px) {
-    .container {
-        max-width: 100%;
-        padding-left: 0;
-        padding-right: 0;
-        margin-left: 0;
-        margin-right: 0;
-        margin: 0 auto;
-    }
-
-    .col-md-6 img {
-        max-height: 50vh;
-        width: 100%;
-        object-fit: cover;
     }
 }
 
