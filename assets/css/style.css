@@ -382,3 +382,17 @@ li {
         display: none;
     }
 }
+
+@media (orientation: landscape) {
+    .container {
+        display: none;
+    }
+
+    main {
+        display: none;
+    }
+    
+    .landscape-image {
+        display: block;
+    }
+}

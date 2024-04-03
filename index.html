@@ -31,6 +31,7 @@
 </head>
 <body>
     <header class="full-height scroll-section">
+        <img src="/assets/img/rotate_phone.png" alt="Landscape Image" class="landscape-image">
         <div class="container m-0 p-0">
             <div class="row custom-row-1 m-0">
                 <div class="col-sm-6 order-sm-1 p-0">
@@ -68,7 +69,7 @@
                         Tillsammans skissar vi på behovet och skräddarsyr en digital lösning som passar perfekt för din
                         verksamhet och som engagerar dina besökare!
                     </p>
-                    <p class="mb-5 section-text">
+                    <p class="mb-4 section-text">
                         Vi ses!
                     </p>
                     <a href="mailto:simon@jellvert.se" class="text-decoration-none m-2">
@@ -142,16 +143,6 @@
                 }, 1000);
             });
         });
-        if (window.innerWidth <= 430) {
-            // Check if the screen orientation API is supported
-            if (screen.orientation && screen.orientation.lock) {
-                // Lock the screen orientation to portrait
-                screen.orientation.lock("portrait");
-            } else if (screen.lockOrientation) { // For older browsers
-                // Lock the screen orientation to portrait
-                screen.lockOrientation("portrait");
-            }
-        }
     </script>
 </body>
 </html>
