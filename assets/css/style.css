@@ -2,7 +2,7 @@ body {
     font-family: 'Rajdhani', sans-serif;
     margin: 0;
     overflow-x: hidden;
-    background-image: url('../img/bright-light-dark-background.jpg');
+    background-image: url('../img/bright-light-dark-background.webp');
     background-size: cover;
     background-position: center;
     background-color: #000;
@@ -113,7 +113,7 @@ li {
 }
 
 .arrow-container {
-    margin-top: 50px; /* Adjust the margin as needed */
+    margin-top: 50px;
 }
 
 .fa-arrow-down {
@@ -191,17 +191,17 @@ li {
     width: 100%;
     background-color: transparent;
     display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
+    justify-content: center;
+    align-items: center;
 }
 
 .overlay-content {
-    text-align: center; /* Center the content within the section */
+    text-align: center;
 }
 
 .background-website {
     position: relative;
-    background-image: url('../img/digger.lg.png');
+    background-image: url('../img/digger.lg.webp');
     height: 100vh;
     width: 100%;
     background-size: contain;
@@ -212,7 +212,7 @@ li {
 
 .background-webshop {
     position: relative;
-    background-image: url('../img/nercia.lg.png');
+    background-image: url('../img/nercia.lg.webp');
     height: 100vh;
     width: 100%;
     background-size: contain;
@@ -313,12 +313,12 @@ li {
     }
 
     .background-website {
-        background-image: url('../img/diggers.md.png');
+        background-image: url('../img/diggers.md.webp');
     }
 
 
     .background-webshop {
-        background-image: url('../img/nercia.md.png');
+        background-image: url('../img/nercia.md.webp');
     }
 
     .background-bookingsystem {
@@ -377,11 +377,11 @@ li {
     }
 
     .background-website {
-        background-image: url('../img/diggers.sm.png');
+        background-image: url('../img/diggers.sm.webp');
     }
 
     .background-webshop {
-        background-image: url('../img/nercia.sm.png');
+        background-image: url('../img/nercia.sm.webp');
     }
 
     .background-bookingsystem {
