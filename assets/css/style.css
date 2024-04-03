@@ -59,13 +59,6 @@ header.full-height {
     height: 50vh;
 }
 
-img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: cover;
-    border-radius: 0 0 10px 0;
-}
-
 .header-text {
     background-color: transparent;
     color: #fff;
@@ -115,6 +108,18 @@ li {
     -webkit-background-clip: text;
     background-clip: text;
     transition: transform 0.3s ease;
+}
+
+.arrow-container {
+    margin-top: 20px; /* Adjust the margin as needed */
+}
+
+.fa-arrow-down {
+    font-size: 30px;
+    color: transparent;
+    background: linear-gradient(45deg, #ff3399, #ff66cc, #ff3399);
+    -webkit-background-clip: text;
+    background-clip: text;
 }
 
 .fa-envelope:hover {
