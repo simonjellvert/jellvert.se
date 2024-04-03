@@ -395,6 +395,10 @@ li {
     main {
         display: none;
     }
+
+    body {
+        background-image: none;
+    }
     
     .landscape-image {
         display: block;
@@ -406,6 +410,5 @@ li {
         margin: auto;
         min-width: 100%;
         min-height: 100%;
-        object-fit: cover;
     }
 }
