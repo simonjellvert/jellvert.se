@@ -368,6 +368,10 @@ li {
         height: auto;
     }
 
+    .overlay-content {
+        width: 95%;
+    }
+
     .overlay-text {
         padding: 25px;
     }
@@ -410,9 +414,7 @@ li {
     }
 }
 
-
-
-@media (max-height: 430px) and (orientation: landscape) {
+@media (orientation: landscape) and (max-width: 430px) {
     .container {
         display: none;
     }
