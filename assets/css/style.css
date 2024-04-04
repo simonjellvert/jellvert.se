@@ -414,7 +414,7 @@ li {
     }
 }
 
-@media (orientation: landscape) and (max-width: 431px) {
+@media (orientation: landscape) and (max-height: 431px) {
     .container {
         display: none;
     }
