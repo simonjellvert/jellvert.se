@@ -223,7 +223,7 @@ li {
 
 .background-bookingsystem {
     position: relative;
-    background-image: url('../img/pizzavagnen.lg.png');
+    background-image: url('../img/pizzavagnen.lg.webp');
     height: 100vh;
     width: 100%;
     background-size: contain;
@@ -322,7 +322,7 @@ li {
     }
 
     .background-bookingsystem {
-        background-image: url('../img/pizzavagnen.md.png');
+        background-image: url('../img/pizzavagnen.md.webp');
     }
 
     h1 {
@@ -385,7 +385,7 @@ li {
     }
 
     .background-bookingsystem {
-        background-image: url('../img/pizzavagnen.sm.png');
+        background-image: url('../img/pizzavagnen.sm.webp');
     }
 
     .section-text {
@@ -414,7 +414,7 @@ li {
     }
 }
 
-@media (orientation: landscape) and (max-width: 430px) {
+@media (orientation: landscape) and (max-width: 431px) {
     .container {
         display: none;
     }
