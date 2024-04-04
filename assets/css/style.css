@@ -3,6 +3,7 @@ body {
     margin: 0;
     overflow-x: hidden;
     background-image: url('../img/bright-light-dark-background.webp');
+    content: "Bakgrundsbild i färgen rosa neon";
     background-size: cover;
     background-position: center;
     background-color: #000;
@@ -177,6 +178,7 @@ li {
 .section-text {
     font-size: 20px;
     font-weight: 100;
+    width: ;
     margin: 0;
 }
 
@@ -186,7 +188,8 @@ li {
 
 .overlay-website,
 .overlay-webshop,
-.overlay-bookingsystem {
+.overlay-bookingsystem,
+.overlay-bio {
     height: 100vh;
     width: 100%;
     background-color: transparent;
@@ -202,6 +205,7 @@ li {
 .background-website {
     position: relative;
     background-image: url('../img/digger.lg.webp');
+    content: "Bild på Goal Diggers hemsida";
     height: 100vh;
     width: 100%;
     background-size: contain;
@@ -213,6 +217,7 @@ li {
 .background-webshop {
     position: relative;
     background-image: url('../img/nercia.lg.webp');
+    content: "Bild på Nercias webshop";
     height: 100vh;
     width: 100%;
     background-size: contain;
@@ -224,6 +229,7 @@ li {
 .background-bookingsystem {
     position: relative;
     background-image: url('../img/pizzavagnen.lg.webp');
+    content: "Bild på PizzaVagnens hemsida och bokningssida";
     height: 100vh;
     width: 100%;
     background-size: contain;
@@ -310,19 +316,23 @@ li {
 
     .section-text {
         margin: 0;
+        font-size: 15px;
     }
 
     .background-website {
         background-image: url('../img/diggers.md.webp');
+        content: "Bild på Goal Diggers hemsida";
     }
 
 
     .background-webshop {
         background-image: url('../img/nercia.md.webp');
+        content: "Bild på Nercias webshop";
     }
 
     .background-bookingsystem {
         background-image: url('../img/pizzavagnen.md.webp');
+        content: "Bild på PizzaVagnens hemsida och bokningssida";
     }
 
     h1 {
@@ -345,7 +355,7 @@ li {
     }
 }
 
-@media (max-width: 430px) {
+@media (max-width: 575px) {
     .logotype  {
         height: 20vh;
         width: 100%;
@@ -368,6 +378,10 @@ li {
         height: auto;
     }
 
+    .list-unstyled {
+        margin-bottom: 2rem !important;
+    }
+
     .overlay-content {
         width: 95%;
     }
@@ -378,14 +392,17 @@ li {
 
     .background-website {
         background-image: url('../img/diggers.sm.webp');
+        content: "Bild på Goal Diggers hemsida";
     }
 
     .background-webshop {
         background-image: url('../img/nercia.sm.webp');
+        content: "Bild på Nercias webshop";
     }
 
     .background-bookingsystem {
         background-image: url('../img/pizzavagnen.sm.webp');
+        content: "Bild på PizzaVagnens hemsida och bokningssida";
     }
 
     .section-text {
