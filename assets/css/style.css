@@ -363,7 +363,7 @@ li {
     }
 
     .header-text {
-        margin-top: 50px;
+        margin-top: 1rem;
     }
 
     .section-text {
@@ -379,7 +379,7 @@ li {
     }
 
     .list-unstyled {
-        margin-bottom: 2rem !important;
+        margin-bottom: 1rem !important;
     }
 
     .overlay-content {
